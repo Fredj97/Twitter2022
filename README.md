@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://o7Mu30u%20-%20Imgur.gif/>
+img src=https://o7Mu30u%20-%20Imgur.gif
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
