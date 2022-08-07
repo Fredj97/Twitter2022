@@ -6,6 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+
+
     <ImageView
         android:id="@+id/ivProfileImage"
         android:layout_width="50dp"
@@ -36,4 +38,13 @@
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
         tools:text="This is my tweet" />
+    <TextView
+        android:id="@+id/custom_font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:linksClickable="true"
+        />
+
+
 </RelativeLayout>
