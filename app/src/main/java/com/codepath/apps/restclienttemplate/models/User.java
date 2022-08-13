@@ -3,6 +3,7 @@ package com.codepath.apps.restclienttemplate.models;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+import androidx.room.TypeConverters;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -27,6 +28,12 @@ public class User {
 
     @ColumnInfo
     public String profileImageUrl;
+    @ColumnInfo
+    public String tweetUrl;
+
+    @TypeConverters(Convert.class)
+    @ColumnInfo
+    public List<String> medias = new ArrayList<>();
 
     // empty constructor needed by the Parceler library
     public User(){}

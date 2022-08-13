@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONException;
 import org.parceler.Parcels;
@@ -21,12 +22,13 @@ import okhttp3.Headers;
 public class ComposeActivity extends AppCompatActivity {
 
 public static final String TAG = "ComposeActivity";
-    public static final int MAX_TWEET_LENGTH =140;
+    public static final int MAX_TWEET_LENGTH =200;
 
     EditText etCompose;
     Button btnTweet;
-
     TwitterClient client;
+    Button Draftbutton;
+    FloatingActionButton ReturnButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,9 @@ public static final String TAG = "ComposeActivity";
 
         etCompose=findViewById(R.id.etCompose);
         btnTweet=findViewById(R.id.btnTweet);
+        Draftbutton=findViewById(R.id. DraftButton);
+        ReturnButton=findViewById(R.id.ReturnButton);
+
         //Set click listener on button
         btnTweet.setOnClickListener(new View.OnClickListener() {
 

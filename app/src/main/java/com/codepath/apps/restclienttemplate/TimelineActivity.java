@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+import androidx.appcompat.widget.Toolbar;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.codepath.apps.restclienttemplate.models.TweetDao;
@@ -31,11 +32,13 @@ import okhttp3.Headers;
 
 public class TimelineActivity extends AppCompatActivity {
 
+
     public static final String TAG="TimelineActivity";
     private final int REQUEST_CODE= 20;
     TweetDao tweetDao;
     TwitterClient client;
     RecyclerView rvTweets;
+    Toolbar toolbar;
     List<Tweet> tweets;
     TweetsAdapter adapter;
     SwipeRefreshLayout swipeContainer;
@@ -45,9 +48,9 @@ public class TimelineActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
 
+
         client = TwitterApp.getRestClient(this);
         tweetDao = ((TwitterApp) getApplicationContext()).getMyDatabase().tweetDao();
-
         swipeContainer = findViewById(R.id.swipeContainer);
         // Configure the refreshing colors
 
@@ -65,6 +68,10 @@ public class TimelineActivity extends AppCompatActivity {
                 populateHomeTimeline();
             }
         });
+
+        toolbar=findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         //Find the recycler view
         rvTweets = findViewById(R.id.rvTweets);
         //Init the list of tweet and adapter

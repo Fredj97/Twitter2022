@@ -5,6 +5,7 @@ import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
+import androidx.room.TypeConverters;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,6 +34,10 @@ public class Tweet {
     @Ignore
     public User user;
 
+    @TypeConverters(Convert.class)
+    @ColumnInfo
+    public List<String> medias = new ArrayList<>();
+
     // empty constructor needed by the Parceler library
     public Tweet(){}
 
@@ -44,6 +49,18 @@ public class Tweet {
         User user = User.fromJson(jsonObject.getJSONObject("user"));
         tweet.user= user;
         tweet.userId=user.id;
+        try {
+            JSONArray entities_media = jsonObject.getJSONObject("extended_entities").getJSONArray("media");
+            for (int i = 0; i < entities_media.length(); i++) {
+                String m = "";
+                m += entities_media.getJSONObject(i).getString("media_url_https");
+                m += " - ";
+                m += entities_media.getJSONObject(0).getString("type");
+                tweet.medias.add(m);
+            }
+
+        } catch (Exception e) {e.printStackTrace(); }
+
         return tweet;
 
     }

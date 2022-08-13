@@ -7,14 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".ComposeActivity">
 
+
     <EditText
         android:id="@+id/etCompose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/ReturnButton"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="What's happening"
@@ -30,5 +32,27 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:text="@string/tweet" />
+
+    <Button
+        android:id="@+id/DraftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCompose"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="-221dp"
+        android:text="Draft" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ReturnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        app:backgroundTint="#FFFFFF"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
 
 </RelativeLayout>
