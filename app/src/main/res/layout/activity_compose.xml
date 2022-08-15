@@ -8,6 +8,29 @@
     tools:context=".ComposeActivity">
 
 
+    <Button
+        android:id="@+id/btnTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCompose"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="9dp"
+        android:text="@string/tweet"
+        app:backgroundTint="@color/twitter_blue" />
+
+
+    <Button
+        android:id="@+id/DraftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCompose"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="273dp"
+        android:layout_marginTop="-215dp"
+        android:text="Draft"
+        app:backgroundTint="@color/twitter_blue" />
+
     <EditText
         android:id="@+id/etCompose"
         android:layout_width="match_parent"
@@ -21,27 +44,22 @@
         android:gravity="start|top"
         android:hint="What's happening"
         android:inputType="textMultiLine"
-        android:minLines="5" />
+        android:minLines="5"
+        android:textStyle="bold"/>
 
-    <Button
-        android:id="@+id/btnTweet"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/tvCompteur"
+        android:layout_width="53dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etCompose"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:text="@string/tweet" />
-
-    <Button
-        android:id="@+id/DraftButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etCompose"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="296dp"
-        android:layout_marginTop="-221dp"
-        android:text="Draft" />
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="118dp"
+        android:background="@color/twitter_blue"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:counterEnabled="true"
+        app:counterMaxLength="200" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/ReturnButton"
@@ -51,8 +69,10 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="10dp"
         android:clickable="true"
-        app:backgroundTint="#FFFFFF"
+        app:backgroundTint="@color/twitter_blue"
         app:srcCompat="?attr/homeAsUpIndicator" />
+
+
 
 
 </RelativeLayout>

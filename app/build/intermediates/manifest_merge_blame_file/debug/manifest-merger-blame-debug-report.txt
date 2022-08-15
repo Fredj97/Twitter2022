@@ -1,0 +1,99 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.codepath.apps.restclienttemplate"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:7:5-67
+11-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:7:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:8:5-79
+12-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:8:22-76
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:9:5-81
+13-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:9:22-78
+14
+15    <application
+15-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:11:5-43:19
+16        android:name="com.codepath.apps.restclienttemplate.TwitterApp"
+16-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:12:9-35
+17        android:allowBackup="true"
+17-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:13:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.5.0] C:\Users\STH Fred-Junior\.gradle\caches\transforms-2\files-2.1\cc5e9dcdc56dc39042f72c501235e83f\core-1.5.0\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@drawable/ic_launcher"
+20-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:14:9-45
+21        android:label="@string/app_name"
+21-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:15:9-41
+22        android:testOnly="true"
+23        android:theme="@style/AppTheme" >
+23-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:16:9-40
+24        <activity
+24-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:17:9-19:40
+25            android:name="com.codepath.apps.restclienttemplate.ComposeActivity"
+25-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:18:13-44
+26            android:exported="false" />
+26-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:19:13-37
+27        <activity
+27-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:20:9-22:40
+28            android:name="com.codepath.apps.restclienttemplate.TimelineActivity"
+28-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:21:13-45
+29            android:exported="false" />
+29-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:22:13-37
+30        <activity
+30-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:23:9-42:20
+31            android:name="com.codepath.apps.restclienttemplate.LoginActivity"
+31-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:24:13-42
+32            android:label="@string/app_name"
+32-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:25:13-45
+33            android:theme="@style/AppTheme" >
+33-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:26:13-44
+34            <intent-filter>
+34-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:27:13-31:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:28:17-69
+35-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:28:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:30:17-77
+37-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:30:27-74
+38            </intent-filter>
+39            <intent-filter>
+39-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:32:13-41:29
+40                <action android:name="android.intent.action.VIEW" />
+40-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:33:17-69
+40-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:33:25-66
+41
+42                <category android:name="android.intent.category.DEFAULT" />
+42-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:35:17-76
+42-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:35:27-73
+43                <category android:name="android.intent.category.BROWSABLE" />
+43-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:36:17-78
+43-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:36:27-75
+44
+45                <data
+45-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:38:17-40:62
+46                    android:host="@string/intent_host"
+46-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:39:21-55
+47                    android:scheme="@string/intent_scheme" />
+47-->C:\Users\STH Fred-Junior\Twitter2022\app\src\main\AndroidManifest.xml:40:21-59
+48            </intent-filter>
+49        </activity>
+50
+51        <service
+51-->[androidx.room:room-runtime:2.1.0] C:\Users\STH Fred-Junior\.gradle\caches\transforms-2\files-2.1\aca6d106b4743d2c4304e309c2526d6b\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+52            android:name="androidx.room.MultiInstanceInvalidationService"
+52-->[androidx.room:room-runtime:2.1.0] C:\Users\STH Fred-Junior\.gradle\caches\transforms-2\files-2.1\aca6d106b4743d2c4304e309c2526d6b\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
+53            android:exported="false" />
+53-->[androidx.room:room-runtime:2.1.0] C:\Users\STH Fred-Junior\.gradle\caches\transforms-2\files-2.1\aca6d106b4743d2c4304e309c2526d6b\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+54    </application>
+55
+56</manifest>
