@@ -37,7 +37,7 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://imgur.com/a/bwIeq0u' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [Imgur](https://imgur.com/a/bwIeq0u/).
 
 ## Notes
 
