@@ -35,9 +35,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/Fredj97/Twitter2022/blob/master/bBltmaO%20-%20Imgur.gif'/>
+<img src='https://https://imgur.com/a/bwIeq0u.gif'/>
 
-GIF created with [Imgur](https://imgur.com/a/bwIeq0u/).
+GIF created with [Imgur](https://imgur.com/a/bwIeq0u.gif/).
 
 ## Notes
 
