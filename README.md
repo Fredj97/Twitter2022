@@ -35,9 +35,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/a/bwIeq0u.gif'/>
+<img src='https://submissions.us-east-1.linodeobjects.com/android_university/BO-YXRJa.gif'/>
 
-GIF created with [Imgur](https://imgur.com/a/bwIeq0u.gif/).
 
 ## Notes
 
